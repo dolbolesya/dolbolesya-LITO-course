@@ -8,10 +8,6 @@ namespace dolbolesya_LITO_course
 {
     class Admin:User
     {
-        public Admin Vlad = new Admin()
-        {
-           
-
-        };
+        
     }
 }

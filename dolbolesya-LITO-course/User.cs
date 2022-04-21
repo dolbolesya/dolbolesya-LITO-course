@@ -9,16 +9,27 @@ namespace dolbolesya_LITO_course
     class User
     {
         public uint id;
-        public string? name
+        public bool isAdmin = false;
+
+        public string? name;
+        public uint age;
+        public string? profession;    
+        private uint _salary { get; set; }
+
+
+        public void Me()
         {
-            get { return name; }
-            set { name = value; }   
+            Console.Clear();
+            Console.WriteLine(
+                $"isAdmin: {isAdmin} \n" +
+                $"id: {id}\n" +
+                $"\n" +
+                $"name: {name}\n" +
+                $"age: {age}\n" +
+                $"\n" +
+                $"profession: {profession}\n" +
+                $"salary: {_salary}\n"
+                );
         }
-        public int age;
-
-        public string? profession;
-        private int salary { get; set; }
-
-
     }
 }
